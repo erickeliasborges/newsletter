@@ -71,6 +71,9 @@ quarkus:
     # já com o jdbc-cmt o quartz deixa que seja salvo na mesma transação que já está rodando para gravar o registro.
     store-type: jdbc-cmt
     clustered: false
+    # Habilitar quando tem réplicas da API
+#    clustered: true
+#    instance-id: AUTO
     misfire-policy:
       task-job: ignore-misfire-policy
 
